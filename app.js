@@ -8,12 +8,14 @@ const bookcontroller = require('./bookcontroller')
 const usercontroller = require('./usercontroller')
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/libmgmt', {
+mongoose.connect('mongodb+srv://prithvi1:dekuRzTDYaxIl6Fq@cluster0.a5u90.mongodb.net/libmgmt', {
+    
 }).then(() => {
     console.log('Connected to MongoDB');
 }).catch((err) => {
-    console.log('Error connecting to MongoDB', err);
+    console.log('Error connecting to MongoDB:', err.message);
 });
+
 
 app.use(express.json());
 
