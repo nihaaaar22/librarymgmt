@@ -8,7 +8,7 @@ const bookcontroller = require('./bookcontroller')
 const usercontroller = require('./usercontroller')
 
 
-mongoose.connect('mongodb+srv://prithvi1:dekuRzTDYaxIl6Fq@cluster0.a5u90.mongodb.net/libmgmt', {
+mongoose.connect('mongodb+srv://sahilomanwar:EaqSu75Se0rGHAwd@clustermesss.2pykyse.mongodb.net/libmgmt', {
     
 }).then(() => {
     console.log('Connected to MongoDB');
