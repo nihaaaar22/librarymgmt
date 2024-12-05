@@ -19,7 +19,7 @@ mongoose.connect('mongodb+srv://sahilomanwar:EaqSu75Se0rGHAwd@clustermesss.2pyky
 
 app.use(express.json());
 
-app.use('/',async(req,res)=>{
+app.get('/',async(req,res)=>{
     res.send("following are the end points that you can use : \n /register \n/login \n /books \n /user \n /books/borrow/:bookid \n /books/return/:bookid \n admin/books/update/:bookid")
 })
 
